@@ -3,6 +3,8 @@
     <h1>Page1</h1>
     {{ $user->name }}
 
+    <a href="page2">page2</a>
+
     <div x-data="{ count: 0 }">
         <button x-on:click="count++">カウンタが増えるボタン</button>
         <span x-text="count"></span> <!-- 数字はここに出る -->

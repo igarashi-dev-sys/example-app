@@ -15,6 +15,7 @@ Route::get('/dashboard', [DashBoardController::class, 'index'])
 
 Route::middleware('auth')->group(function () {
     Route::get('/page1', [PageController::class, 'page1'])->name('page.page1');
+    Route::get('/page2', [PageController::class, 'page2'])->name('page.page2');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
